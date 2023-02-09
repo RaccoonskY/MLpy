@@ -43,3 +43,9 @@ score_model(X2, y, kf)
 print()
 print("Logistic Regression with Fare & Age features")
 score_model(X3, y, kf)
+
+# choosing the best model of 3
+model = LogisticRegression()
+model.fit(X1, y)
+
+print(model.predict([[3, False, 25, 0, 1, 2]]))
